@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cdn.tailwindcss.com"</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ra Style Navbar - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <nav class="flex items-center justify-between bg-black px-6 py-4">
+    <!-- Logo -->
+    <div class="text-2xl font-bold">
+      Ra
+    </div>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex space-x-6">
+      <li class="relative group">
+        <a href="#" class="hover:text-pink-500">Games</a>
+        <ul class="absolute hidden group-hover:flex flex-col bg-gray-800 mt-2 rounded shadow-lg">
+          <li><a href="#" class="px-4 py-2 hover:bg-gray-700">Top Rated</a></li>
+          <li><a href="#" class="px-4 py-2 hover:bg-gray-700">New Games</a></li>
+        </ul>
+      </li>
+      <li class="relative group">
+        <a href="#" class="hover:text-pink-500">Categories</a>
+        <ul class="absolute hidden group-hover:flex flex-col bg-gray-800 mt-2 rounded shadow-lg">
+          <li><a href="#" class="px-4 py-2 hover:bg-gray-700">RPG</a></li>
+          <li><a href="#" class="px-4 py-2 hover:bg-gray-700">Strategy</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="hover:text-pink-500">Top Games</a>
+      </li>
+    </ul>
+
+    <!-- Auth Buttons -->
+    <div class="hidden md:flex space-x-4">
+      <a href="login.html" class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded text-white">Login</a>
+      <a href="register.html" class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded text-white">Sign Up</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex flex-col bg-black text-white px-6 py-4 space-y-2 md:hidden">
+    <a href="#" class="hover:text-pink-500">Games</a>
+    <a href="#" class="hover:text-pink-500">Categories</a>
+    <a href="#" class="hover:text-pink-500">Top Games</a>
+    <div class="flex flex-col space-y-2 mt-4">
+      <a href="login.html" class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded text-center">Login</a>
+      <a href="register.html" class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded text-center">Sign Up</a>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
