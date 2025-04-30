@@ -1,76 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://cdn.tailwindcss.com">
+  <script src="https://cdn.tailwindcss.com"
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><title>
+  <title>Kyle - Free Hentai Games</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          height: {
+            'hero-mobile': '15rem',
+            'hero-desktop': '25rem',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
   <!-- Header -->
-  <header class="flex items-center justify-between p-4 bg-gray-800">
+  <header class="flex items-center justify-between p-4 bg-gray-800 sticky top-0 z-10">
     <div class="flex items-center space-x-2">
       <img src="/assets/logos/logo.png" alt="Logo" class="h-8 w-8">
-      <span class="text-xl font-bold"></span>
+      <span class="text-xl font-bold">Kyle</span>
     </div>
-    <div class="space-x-2"> <a href="auth/register.html"
-      <button class="bg-yellow-400 text-black px-4 py-2 rounded">Sign Up<a href="auth/login.html"</buton>
-      <button class="bg-blue-500 px-4 py-2 rounded">Login</button>
+    <div class="flex space-x-2">
+      <a href="auth/register.html" class="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-2 rounded text-sm md:px-4 md:py-2 md:text-base transition duration-200">Sign Up & Get 200 Gold</a>
+      <a href="auth/login.html" class="bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-sm md:px-4 md:py-2 md:text-base transition duration-200">Login</a>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="relative">
-    <img src="/assets/images/hero-banner.jpg" alt="Hero Banner" class="w-full h-60 object-cover">
-    <div class="absolute top-0 left-0 w-full h-full bg-black/50 flex flex-col justify-center items-center">
-      <h1 class="text-2xl md:text-4xl font-bold mb-4">The Best Free Hentai Games for Android, iOS, and PC</h1>
-      <button class="bg-pink-600 px-6 py-3 rounded text-lg font-bold">Sign Up<a href="register.html"</button>
+    <img src="/assets/images/hero-banner.jpg" alt="Hero Banner" class="w-full h-hero-mobile md:h-hero-desktop object-cover">
+    <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-2xl md:text-5xl font-bold mb-4 max-w-3xl leading-tight">The Best Free Hentai Games for Android, iOS, and PC</h1>
+      <a href="auth/register.html" class="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded-lg text-lg font-bold transition duration-200 shadow-lg">Sign Up & Get 200 Gold</a>
     </div>
   </section>
 
   <!-- Most Popular Games -->
-  <section class="p-6">
-    <h2 class="text-2xl font-bold mb-4">Most Popular Free Games</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <!-- Game Card -->
-      <div class="bg-gray-800 p-2 rounded">
-        <img src="/assets/images/game1.jpg" alt="Game 1" class="rounded mb-2">
-        <h3 class="text-sm font-semibold">Fallens Goddles </h3>
-        <p class="text-xs text-gray-400">Adventure</p>
+  <section class="p-4 md:p-8 max-w-6xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6">Most Popular Free Games</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-6">
+      <!-- Game Cards -->
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md">
+        <img src="/assets/images/game1.jpg" alt="Fallen Goddesses" class="w-full h-40 md:h-48 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm md:text-base font-semibold truncate">Fallen Goddesses</h3>
+          <p class="text-xs md:text-sm text-gray-400">Adventure</p>
+        </div>
       </div>
-      <div class="bg-gray-800 p-2 rounded">
-        <img src="/assets/images/game2.jpg" alt="Game 2" class="rounded mb-2">
-        <h3 class="text-sm font-semibold">Horny Arcana</h3>
-        <p class="text-xs text-gray-400">Simulation</p>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md">
+        <img src="/assets/images/game2.jpg" alt="Horny Arcana" class="w-full h-40 md:h-48 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm md:text-base font-semibold truncate">Horny Arcana</h3>
+          <p class="text-xs md:text-sm text-gray-400">Simulation</p>
+        </div>
       </div>
-      <div class="bg-gray-800 p-2 rounded">
-        <img src="/assets/images/game3.jpg" alt="Game 3" class="rounded mb-2">
-        <h3 class="text-sm font-semibold">Fap Ceo</h3>
-        <p class="text-xs text-gray-400">Dating Sim</p>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md">
+        <img src="/assets/images/game3.jpg" alt="Fap Ceo" class="w-full h-40 md:h-48 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm md:text-base font-semibold truncate">Fap Ceo</h3>
+          <p class="text-xs md:text-sm text-gray-400">Dating Sim</p>
+        </div>
       </div>
-      <div class="bg-gray-800 p-2 rounded">
-        <img src="/assets/images/game4.jpg" alt="Game 4" class="rounded mb-2">
-        <h3 class="text-sm font-semibold">Kamihime Project</h3>
-        <p class="text-xs text-gray-400">Turn Based RPG</p>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md">
+        <img src="/assets/images/game4.jpg" alt="Kamihime Project" class="w-full h-40 md:h-48 object-cover">
+        <div class="p-3">
+          <h3 class="text-sm md:text-base font-semibold truncate">Kamihime Project</h3>
+          <p class="text-xs md:text-sm text-gray-400">Turn Based RPG</p>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md hidden lg:block">
+        <img src="/assets/images/game1.jpg" alt="Another Game" class="w-full h-48 object-cover">
+        <div class="p-3">
+          <h3 class="text-base font-semibold truncate">Another Game</h3>
+          <p class="text-sm text-gray-400">Strategy</p>
+        </div>
       </div>
     </div>
 
+    <div class="mt-8 text-center">
+      <button class="border border-white hover:bg-white hover:text-black px-6 py-2 rounded transition duration-200">
+        View All Games
+      </button>
+    </div>
+  </section>
+
+  <!-- Create Account Form -->
+  <section class="p-6 bg-gray-800 rounded-lg max-w-2xl mx-auto my-8 shadow-xl">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Don't Have a Nutaku Account Yet?</h2>
+    <form class="space-y-4">
+      <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+      <input type="text" placeholder="Username" class="w-full p-3 rounded bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+      <input type="password" placeholder="Password" class="w-full p-3 rounded bg-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+      <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 p-3 rounded text-white font-bold transition duration-200 shadow-md">
+        Create Free Account
+      </button>
+    </form>
+    <div class="mt-6 flex items-center justify-center">
+      <button class="bg-white hover:bg-gray-100 text-black px-6 py-2 rounded flex items-center space-x-2 transition duration-200">
+        <img src="/assets/logos/google-icon.png" alt="Google" class="w-5 h-5">
+        <span>Sign up with Google</span>
+      </button>
+    </div>
+  </section>
+
   <!-- About -->
-  <section class="p-6 text-sm text-gray-400">
-    <p>kyle is an online gaming portal bringing you high-quality games from around the world. You’ve never played free online games like these before!</p>
+  <section class="p-6 text-sm md:text-base text-gray-400 max-w-4xl mx-auto text-center">
+    <p>Kyle is an online gaming portal bringing you high-quality games from around the world. You've never played free online games like these before!</p>
   </section>
 
   <!-- Footer -->
-  <footer class="p-4 bg-gray-800 text-center text-xs text-gray-400">
-    <div class="flex justify-center space-x-4 mb-2">
-      <a href="#"><img src="/assets/icons/whatsapp.png" class="w-5 h-5 rounded-full object-cover"></a>
-      <a href="https://www.facebook.com/Randy.kyle09"><img src="/assets/icons/facebook.png" class="w-5 h-5 rounded-full object-cover"></a>
-      <a href="#"><img src="/assets/icons/youtube.png" class="w-5 h-5 rounded-full object-cover"></a>
-      <a href="#"><img src="/assets/icons/instagram.png" class="w-5 h-5 rounded-full object-cover"></a>
+  <footer class="p-6 bg-gray-800 text-center text-xs md:text-sm text-gray-400">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="#" class="hover:opacity-80 transition duration-200">
+        <img src="/assets/icons/whatsapp.png" alt="WhatsApp" class="w-6 h-6 rounded-full object-cover">
+      </a>
+      <a href="https://www.facebook.com/Randy.kyle09" class="hover:opacity-80 transition duration-200">
+        <img src="/assets/icons/facebook.png" alt="Facebook" class="w-6 h-6 rounded-full object-cover">
+      </a>
+      <a href="#" class="hover:opacity-80 transition duration-200">
+        <img src="/assets/icons/youtube.png" alt="YouTube" class="w-6 h-6 rounded-full object-cover">
+      </a>
+      <a href="#" class="hover:opacity-80 transition duration-200">
+        <img src="/assets/icons/instagram.png" alt="Instagram" class="w-6 h-6 rounded-full object-cover">
+      </a>
     </div>
-    <p>&copy; 2025 kyle. All rights reserved.</p>
+    <p>&copy; 2025 Kyle. All rights reserved.</p>
   </footer>
 
 </body>
